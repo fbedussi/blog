@@ -1,8 +1,7 @@
 theme: minima
 title: No stress front end
-author:
-  name: Francesco Bedussi
-  email: "francesco@francescobedussi.it"
+author: Francesco Bedussi
+email: "francesco@francescobedussi.it"
 description: A log of my journey to a better, simplier front end development
 url: https://fbedussi.github.io/blog/
 disqus:
