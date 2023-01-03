@@ -12,5 +12,5 @@ disqus:
 minima:
   social_links:
     - { platform: github,  user_url: "https://github.com/fbedussi" }
-    - { platform: mastodon, user_url: "https://mastodon.uno/@saiot" }
+    - { platform: mastodon, user_url: "https://mastodon.uno/@saiot", title: "mastodon" }
 show_excerpts: true
