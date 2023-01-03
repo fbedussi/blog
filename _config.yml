@@ -1,4 +1,7 @@
 theme: minima
-title: no stress front end2
+title: No stress front end
 author: Francesco Bedussi
 description: free thoughts on front end development
+url: https://fbedussi.github.io/blog/
+disqus:
+  shortname: francescobedussi
