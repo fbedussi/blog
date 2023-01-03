@@ -1,7 +1,14 @@
 theme: minima
 title: No stress front end
-author: Francesco Bedussi
-description: free thoughts on front end development
+author:
+  name: Francesco Bedussi
+  email: "francesco@francescobedussi.it"
+description: A log of my journey to a better, simplier front end development
 url: https://fbedussi.github.io/blog/
 disqus:
   shortname: francescobedussi
+minima:
+  social_links:
+    - { platform: github,  user_url: "https://github.com/fbedussi" }
+    - { platform: mastodon, user_url: "https://mastodon.uno/@saiot" }
+show_excerpts: true
