@@ -2,8 +2,9 @@ plugins:
   - jekyll-remote-theme
 remote_theme: jekyll/minima
 title: No stress front end
-author: Francesco Bedussi
-email: "francesco@francescobedussi.it"
+author: 
+  name: Francesco Bedussi
+  email: "francesco@francescobedussi.it"
 description: A log of my journey to a better, simplier front end development
 url: https://fbedussi.github.io/blog/
 disqus:
