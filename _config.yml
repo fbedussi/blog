@@ -10,6 +10,7 @@ url: https://fbedussi.github.io/blog/
 disqus:
   shortname: francescobedussi
 minima:
+  skin: solarized-dark
   social_links:
     - { platform: github,  user_url: "https://github.com/fbedussi" }
     - { platform: mastodon, user_url: "https://mastodon.uno/@saiot", title: "mastodon" }
