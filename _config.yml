@@ -10,7 +10,7 @@ url: https://fbedussi.github.io/blog/
 disqus:
   shortname: front-end-no-stress
 minima:
-  skin: classic
+  skin: bedux
   social_links:
     - { platform: github,  user_url: "https://github.com/fbedussi" }
     - { platform: mastodon, user_url: "https://mastodon.uno/@saiot", title: "mastodon" }
