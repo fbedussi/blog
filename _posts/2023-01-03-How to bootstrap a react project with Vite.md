@@ -1,6 +1,7 @@
 ---
 title: 'How to setup a react project with Vite'
 date: 2023-01-02
+excerpt_separator: <!--more-->
 ---
 
 ## 1 Bootstrap a react project with vite
@@ -11,6 +12,8 @@ npm init vite
 npm install
 
 change the dev script to start
+
+<!--more-->
 
 ## 2 Install styled components
 
