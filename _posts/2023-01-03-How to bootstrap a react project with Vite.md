@@ -1,6 +1,8 @@
 ---
 title: 'How to setup a react project with Vite'
 date: 2023-01-02
+categories: Recipes
+layout: post
 excerpt_separator: <!--more-->
 ---
 

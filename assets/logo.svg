@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="12.734755mm"
+   height="6.4802356mm"
+   viewBox="0 0 12.734755 6.4802356"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1"
+     transform="translate(-32.907007,-121.67488)">
+    <g
+       aria-label="&lt;+&gt;"
+       id="text429"
+       style="font-size:10.5833px;line-height:1.25;letter-spacing:-2.64583px;stroke-width:0.264583">
+      <path
+         d="m 37.162037,121.67488 0.748972,1.18316 -3.52234,2.05696 3.52234,2.01897 -0.776109,1.22115 -4.227893,-2.62683 v -1.21572 z"
+         style="font-weight:bold;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold'"
+         id="path4317" />
+      <path
+         d="m 39.985369,122.03851 v 2.23064 h 2.187215 v 1.32427 h -2.187215 v 2.23063 h -1.432816 v -2.23063 h -2.176361 v -1.32427 h 2.176361 v -2.23064 z"
+         style="fill:#ff0000"
+         id="path4319" />
+      <path
+         d="m 41.397594,121.67488 4.244174,2.62683 v 1.22658 l -4.227892,2.62683 -0.776109,-1.16688 3.527767,-2.07324 -3.527767,-2.00811 z"
+         style="font-weight:bold;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold'"
+         id="path4321" />
+    </g>
+  </g>
+</svg>

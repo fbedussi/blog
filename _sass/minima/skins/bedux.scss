@@ -2,6 +2,19 @@
 
 $color-scheme-auto: false;
 $color-scheme-dark: false;
-$lm-brand-color-dark: #03cea4;
+$lm-brand-color-dark: #ff0000;
 
 @import 'minima/skins/auto';
+
+.site-title,
+.site-title {
+  display: flex;
+  align-items: center;
+  color: black !important;
+  gap: 0.5em;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+}

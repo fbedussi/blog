@@ -1,19 +1,26 @@
 plugins:
   - jekyll-remote-theme
 remote_theme: jekyll/minima
-title: No stress front end
-author: 
-  name: Francesco Bedussi
-  email: "francesco@francescobedussi.it"
-description: A journey to a healthier front end development
-url: https://fbedussi.github.io/blog/
-disqus:
-  shortname: front-end-no-stress
 minima:
   skin: bedux
   social_links:
     - { platform: github,  user_url: "https://github.com/fbedussi" }
     - { platform: mastodon, user_url: "https://mastodon.uno/@saiot", title: "mastodon" }
+
+title: No stress front end
+description: A journey to a healthier front end development
+url: https://fbedussi.github.io/blog/
+
+author: 
+  name: Francesco Bedussi
+  email: "francesco [at] francescobedussi.it"
+
+disqus:
+  shortname: front-end-no-stress
+
 show_excerpts: true
+
 header_pages:
   - about.md
+
+permalink: /:categories/:title
