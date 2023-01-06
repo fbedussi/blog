@@ -52,6 +52,7 @@ Using styled components you don't need any CSS pre/post-processor, and no relate
 Alternatively, [CSS modules are supported out of the box by Vite](https://vitejs.dev/guide/features.html#css-modules).
 
 `npm i styled-components`
+
 `npm i -D @types/styled-components`
 
 And delete any css file eventually present in the bootstrapped project.
@@ -63,16 +64,21 @@ I'm tired of discussion on how to format code. In the projects I manage the team
 [Eslint](https://eslint.org) is a super useful tool to capture possible errors at write time. Along with TypeScript is the foundation of the [testing trophy](https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications).
 
 `npm i -D eslint`
+
 `npm i -D --save-exact prettier`
+
 `npm i -D eslint-plugin-react`
+
 `npm i -D eslint-plugin-react-hooks`
+
 `npm i -D @typescript-eslint/eslint-plugin@latest`
 
 Create or [copy these files from a previous project](https://github.com/fbedussi/vite-react-bootstrap):
-.eslintignore
-.eslintrc.json
-.prettierignore
-.prettierrc
+
+- .eslintignore
+- .eslintrc.json
+- .prettierignore
+- .prettierrc
 
 To enable format on save on vs code run ctrl/cmd + shift + p "format document with..." and select "configure default formatter", selecting prettier. On my machine this is necessary, even if Prettier is already configured as the default formatter.
 
@@ -81,6 +87,7 @@ To enable format on save on vs code run ctrl/cmd + shift + p "format document wi
 [Jest](https://jestjs.io/) is my go to choice for JavaScript testing, and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) is the best tool I know to test React applications.
 
 `npm i -D jest jest-environment-jsdom`
+
 `npm i -D @testing-library/react @testing-library/jest-dom @testing-library/user-event`
 
 add
