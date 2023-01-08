@@ -20,3 +20,17 @@ $lm-brand-color-dark: #ff0000;
   display: flex;
   justify-content: space-between;
 }
+
+button {
+  background-color: transparent;
+  appearance: none;
+  border: solid 1px $border-color-01;
+  padding: 17px;
+  line-height: 1;
+}
+
+.search-form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
