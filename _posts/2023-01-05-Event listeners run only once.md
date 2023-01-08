@@ -8,8 +8,8 @@ excerpt_separator: <!--more-->
 
 If you want to add an event listener and run it only once, you can use the once option.
 
-```JS
+```javascript
 element.addEventListener('click', () => console.log('I run only once'), {
-  once: true
-});
+  once: true,
+})
 ```

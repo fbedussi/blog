@@ -92,7 +92,7 @@ To enable format on save on vs code run ctrl/cmd + shift + p "format document wi
 
 add
 
-```JSON
+```json
 "test": "jest",
 "test:watch": "jest --watchAll=true",
 ```
@@ -106,7 +106,7 @@ add the files
 
 `babel.config.cjs` with this content:
 
-```JS
+```javascript
 module.exports = {
   presets: [
     [
@@ -125,13 +125,13 @@ module.exports = {
 
 `jest-setup.ts` with this content:
 
-```TS
+```typescript
 import '@testing-library/jest-dom'
 ```
 
 add the jest entry in the package.json
 
-```JSON
+```json
   "jest": {
     "testEnvironment": "jsdom",
     "setupFilesAfterEnv": [
@@ -163,7 +163,7 @@ Then you can install [pretty quick](https://github.com/azz/pretty-quick), to run
 
 add
 
-```JSON
+```json
 "pretty-quick": "pretty-quick --staged"
 ```
 
@@ -171,7 +171,7 @@ to the scripts in the package.json
 
 create the file `./.githooks/pre-commit` with this content:
 
-```SH
+```sh
 #!/bin/sh
 
 npm run pretty-quick && npm run lint
@@ -185,7 +185,7 @@ and make it executable:
 
 create the file `./.githooks/pre-push` with this content:
 
-```SH
+```sh
 #!/bin/sh
 
 npm run test
@@ -203,7 +203,7 @@ Install [Commitlint](https://commitlint.js.org) and the [conventional commit](ht
 
 add
 
-```JSON
+```json
 "commitlint": "commitlint --edit $1",
 ```
 
@@ -211,7 +211,7 @@ to npm scripts in package.json
 
 create the file `./.githooks/commit-msg` with this content:
 
-```SH
+```sh
 #!/bin/sh
 
 npm run commitlint
@@ -225,7 +225,7 @@ create the file `commitlint.config.cjs`
 
 with this content:
 
-```JS
+```javascript
 module.exports = {
   extends: ['@commitlint/config-conventional'],
 }

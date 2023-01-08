@@ -8,8 +8,8 @@ excerpt_separator: <!--more-->
 
 You can use the Clipboard API to create a “Copy to Clipboard” function.
 
-```JS
+```javascript
 function copyToClipboard(text) {
-  navigator.clipboard.writeText(text);
+  navigator.clipboard.writeText(text)
 }
 ```
