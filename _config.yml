@@ -21,6 +21,13 @@ disqus:
 show_excerpts: true
 
 header_pages:
+  - search.html
   - about.md
 
 permalink: /:categories/:title
+
+tipue_search:
+  include:
+    pages: true
+  exclude:
+    files: [search.html]

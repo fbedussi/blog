@@ -1,6 +1,6 @@
 ---
 title: About me
-layout: default
+layout: page
 ---
 
 ![](http://francescobedussi.it/media/francesco_bedussi_qrrq5e_c_scale,w_1600.jpg)
