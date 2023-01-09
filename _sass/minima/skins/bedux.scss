@@ -34,3 +34,14 @@ button {
   gap: 1rem;
   align-items: center;
 }
+
+.copy-code-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.copy-code-button {
+  padding: 8px;
+  font-size: 75%;
+}
