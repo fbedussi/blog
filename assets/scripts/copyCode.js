@@ -1,4 +1,3 @@
-// This assumes that you're using Rouge; if not, update the selector
 const codeBlocks = Array.from(
   document.querySelectorAll('div.highlighter-rouge'),
 )
