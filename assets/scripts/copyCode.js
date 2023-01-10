@@ -3,6 +3,22 @@ const codeBlocks = Array.from(
   document.querySelectorAll('div.highlighter-rouge'),
 )
 
+const clickHandler = (e) => {
+  const button = e.target
+  const codeBlock = button.parentElement.parentElement.querySelector('code')
+  const code = codeBlock.innerText
+
+  window.navigator.clipboard.writeText(code)
+
+  button.classList.add('copied')
+  button.innerText = 'Copied!'
+
+  setTimeout(() => {
+    button.innerText = buttonText
+    button.classList.remove('copied')
+  }, 2000)
+}
+
 codeBlocks.forEach((codeBlock) => {
   const buttonWrapper = document.createElement('div')
   buttonWrapper.className = 'copy-code-button-wrapper'
@@ -12,21 +28,7 @@ codeBlocks.forEach((codeBlock) => {
   button.innerText = buttonText
   button.className = 'copy-code-button'
 
-  button.addEventListener('click', (e) => {
-    const button = e.target
-    const codeBlock = button.parentElement.parentElement.querySelector('code')
-    const code = codeBlock.innerText
-
-    window.navigator.clipboard.writeText(code)
-
-    button.classList.add('copied')
-    button.innerText = 'Copied!'
-
-    setTimeout(() => {
-      button.innerText = buttonText
-      button.classList.remove('copied')
-    }, 2000)
-  })
+  button.addEventListener('click', clickHandler)
 
   buttonWrapper.appendChild(button)
 
