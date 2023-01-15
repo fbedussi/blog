@@ -45,6 +45,12 @@ I prefer to change the dev script to start, for sake of habit and to be able to 
 
 `npm start`
 
+Vite does not perform type checking, so to type check add this npm script to package.json:
+
+```json
+  "type-check": "tsc --noEmit",
+```
+
 ## 2 Install styled components
 
 Using styled components you don't need any CSS pre/post-processor, and no related tool or configuration.
