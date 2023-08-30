@@ -1,6 +1,6 @@
 ---
 title: 'How to implement a cookie banner in react'
-date: 2023-30-08
+date: 2023-07-30
 categories: Recipes
 layout: post
 excerpt_separator: <!--more-->
