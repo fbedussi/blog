@@ -1,5 +1,5 @@
 ---
-title: 'How to integrate Google Analytics in React.md'
+title: 'How to integrate Google Analytics in React'
 date: 2023-08-30
 categories: Recipes
 layout: post
