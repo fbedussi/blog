@@ -6,7 +6,7 @@ layout: post
 excerpt_separator: <!--more-->
 ---
 
-In the [first post](http://127.0.0.1:4000/recipes/How-to-build-a-modern-SPA-client-side-almost-frameworkless-Introduction) we said we are gonna develop a personal note taking web app, using [µhtml](https://webreflection.github.io/uhtml/) as the only dependency, while we will use the web platform for everything else: 
+In the [first post](https://fbedussi.github.io/blog/recipes/How-to-build-a-modern-SPA-client-side-almost-frameworkless-Introduction) we said we are gonna develop a personal note taking web app, using [µhtml](https://webreflection.github.io/uhtml/) as the only dependency, while we will use the web platform for everything else: 
 
 - ESM modules to split and organize the code
 - Custom elements to create components

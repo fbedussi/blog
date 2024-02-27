@@ -28,4 +28,4 @@ Just with this single dependency it is possible to develop a fairly complex web 
 
 In this post series we will see exactly how to do that. We will build a web app to take notes, starting from a very simple and buildless solution and progressively enhancing it.
 
-If that intrigues you, see you in the [next post](http://127.0.0.1:4000/recipes/How-to-build-a-modern-SPA-client-side-almost-frameworkless-Part-1). 
+If that intrigues you, see you in the [next post](https://fbedussi.github.io/blog/recipes/How-to-build-a-modern-SPA-client-side-almost-frameworkless-Part-1). 
