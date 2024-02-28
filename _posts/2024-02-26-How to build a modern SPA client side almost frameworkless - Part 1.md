@@ -46,9 +46,9 @@ We are going to use native ESM modules that have a [good browser support](https:
 
 To keep things simple we'll use [Pico](https://picocss.com) as a styling baseline. We can add our own style and even css-in-js later on.
 
-We'll start with the bare minimum amount of features: a form to add a note and a list of the notes. The we will progressively add new features.
+We'll start with the bare minimum amount of features: a form to add a note and a list of the notes. Then we will progressively add new features.
 
-So, for the time being the main js file just mount the only page into the root element:
+So, for the time being the main js file just mounts the only page into the root element:
 
 ```javascript
 import {render, html} from 'https://cdn.jsdelivr.net/npm/uhtml/preactive.js'
@@ -125,7 +125,7 @@ import { render, html, signal } from 'https://cdn.jsdelivr.net/npm/uhtml/preacti
 
 First of all, we are using the preactive variant of µhtml, the one that includes [preactive signals](https://preactjs.com/guide/v10/signals/).
 
-So, when I said that ww'll have used only one dependency I cheated a little bit. The dependencies are actually 2, but they come bundled in one module. 
+So, when I said that we'll have used only one dependency I cheated a little bit. The dependencies are actually 2, but they come bundled in one module. 
 
 Signals are needed to handle the reactivity, so to update the DOM when data changes.
 
@@ -201,7 +201,7 @@ If you are wondering why the `main` element has the `container` class, this is j
 >
 ```
 
-Here you can see that µhtml allows us to attach native [listeners](https://webreflection.github.io/uhtml/#listener) to elements. So, even if using µhtml is very similar to use JSX, please note that we are dealing with real DOM events here, not [React synthetic events](https://react.dev/reference/react-dom/components/common#react-event-object). Also, we are generating the DOM using a template literal, so we don't need the compilation step that is need when you use JSX. Finally µhtml doesn't use any virtual DOM. Signals allow for fine grained DOM updates, and you don't need the overhead of the virtual DOM to optimize DOM updates. 
+Here you can see that µhtml allows us to attach native [listeners](https://webreflection.github.io/uhtml/#listener) to elements. So, even if using µhtml is very similar to use JSX, please note that we are dealing with real DOM events here, not [React synthetic events](https://react.dev/reference/react-dom/components/common#react-event-object). Also, we are generating the DOM using a template literal, so we don't need the compilation step that is needed when you use JSX. Finally, µhtml doesn't use any virtual DOM. Signals allow for fine grained DOM updates, and you don't need the overhead of the virtual DOM to optimize DOM updates. 
 
 ```html
 <textarea />

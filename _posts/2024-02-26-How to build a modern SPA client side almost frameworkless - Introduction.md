@@ -6,7 +6,7 @@ layout: post
 excerpt_separator: <!--more-->
 ---
 
-In the [last post](https://fbedussi.github.io/blog/recipes/How-to-build-a-simple-web-app-with-web-components) I explored the so called HTML Web Components. They allow to progressively enhance a site or application where the HTML is static or rendered server side. But what about the classic data drive single page application rendered client side?
+In the [last post](https://fbedussi.github.io/blog/recipes/How-to-build-a-simple-web-app-with-web-components) I explored the so called HTML Web Components. They allow to progressively enhance a site or application where the HTML is static or rendered server side. But what about the classic data driven single page application rendered client side?
 
 Here the HTML must be created on the fly by the client, starting from some data. This is the typical use case for frameworks like React, Angular, Vue, Svelte, Solid and so on. But, can we go frameworkless and use only the web platform?
 
