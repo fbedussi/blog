@@ -225,7 +225,7 @@ Here you can see [how µhtml generates list of elements](https://webreflection.g
 
 The result, so far, is this:
 
-![](/assets/images/spa-fl-first-version.png)
+![](https://fbedussi.github.io/blog/assets/images/spa-fl-first-version.png)
 
 So, this is the end of the part one, I hope you've enjoyed it, if you have any questions, please, feel free to ask them in the comments. 
 

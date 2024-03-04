@@ -113,7 +113,7 @@ export const delNote = (id) => {
 
 The result is this:
 
-![](/assets/images/spa-fl-delete-button.png)
+![](https://fbedussi.github.io/blog/assets/images/spa-fl-delete-button.png)
 
 It depends on personal taste, but in my opinion it would be better if the delete button and the title were aligned on the same row, instead that one above the other. 
 
@@ -208,7 +208,7 @@ We are leveraging native CSS nesting, that has a good [browser support](https://
 
 The result is now like this:
 
-![](/assets/images/spa-fl-delete-button-aligned.png)
+![](https://fbedussi.github.io/blog/assets/images/spa-fl-delete-button-aligned.png)
 
 I think the solution we are using here can scale pretty well: a base CSS stylesheet with the reset and the styleguide rules, plus the CSS in Js to handle component specific styles. 
 
@@ -277,7 +277,7 @@ Finally we can filter the list based on the `searchTerm` signal value:
 
 Our search box looks like this:
 
-![](/assets/images/spa-fl-search-box.png)
+![](https://fbedussi.github.io/blog/assets/images/spa-fl-search-box.png)
 
 (thanks Pico for having styled everything with no effort)
 
