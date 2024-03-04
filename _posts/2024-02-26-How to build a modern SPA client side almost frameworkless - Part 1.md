@@ -10,8 +10,8 @@ In the [first post](https://fbedussi.github.io/blog/recipes/How-to-build-a-moder
 
 - ESM modules to split and organize the code
 - Custom elements to create components
+- [Constructable stylesheets](https://web.dev/articles/constructable-stylesheets) for css-in-js styling
 - The [Navigation API](https://developer.chrome.com/docs/web-platform/navigation-api) to handle the routing
-- Constructed stylesheets for css-in-js styling
 
 Enough talk, let's start coding.  
 
@@ -223,6 +223,10 @@ Here you can see that µhtml allows us to use [self closing tags](https://webref
 
 Here you can see [how µhtml generates list of elements](https://webreflection.github.io/uhtml/#list) from an array of data, it is pretty much the same as what JSX does, except that, as long as you don't change the elements order, you [don't need keys](https://webreflection.github.io/uhtml/#keyed-or-not-). We'll see how and when use keys later on in this tutorial.
 
+The result, so far, is this:
+
+![](/assets/images/spa-fl-first-version.png)
+
 So, this is the end of the part one, I hope you've enjoyed it, if you have any questions, please, feel free to ask them in the comments. 
 
-Thanks for reading and see you in part 2, where we will see how to delete, edit and save notes. 
+Thanks for reading and see you in [part 2](https://fbedussi.github.io/blog/recipes/How-to-build-a-modern-SPA-client-side-almost-frameworkless-Part-2), where we will see how to delete, edit and save notes. 
