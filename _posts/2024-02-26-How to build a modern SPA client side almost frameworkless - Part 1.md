@@ -227,6 +227,8 @@ The result, so far, is this:
 
 ![](https://fbedussi.github.io/blog/assets/images/spa-fl-first-version.png)
 
-So, this is the end of the part one, I hope you've enjoyed it, if you have any questions, please, feel free to ask them in the comments. 
+So, this is the end of the part one, I hope you've enjoyed it, if you have any questions, please, feel free to ask them in the comments.
+
+You can find all the code of this part in [this repo](https://github.com/fbedussi/frameworkless-spa-tutorial/tree/part1).
 
 Thanks for reading and see you in [part 2](https://fbedussi.github.io/blog/recipes/How-to-build-a-modern-SPA-client-side-almost-frameworkless-Part-2), where we will see how to delete, edit and save notes. 

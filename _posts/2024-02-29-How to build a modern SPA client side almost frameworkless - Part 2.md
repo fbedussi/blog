@@ -281,4 +281,8 @@ Our search box looks like this:
 
 (thanks Pico for having styled everything with no effort)
 
-Good, our application is really starting to take shape. In the [next part](https://fbedussi.github.io/blog/recipes/How-to-build-a-modern-SPA-client-side-almost-frameworkless-Part-3) we will see another key feature of a client side SPA: routing, so stay tuned, and, as always, feel free to ask or amend in the comments.
+Good, our application is really starting to take shape. 
+
+As usual, you can find all the code of this part in [this repo](https://github.com/fbedussi/frameworkless-spa-tutorial/tree/part2).
+
+In the [next part](https://fbedussi.github.io/blog/recipes/How-to-build-a-modern-SPA-client-side-almost-frameworkless-Part-3) we will see another key feature of a client side SPA: routing, so stay tuned, and, as always, feel free to ask or amend in the comments.

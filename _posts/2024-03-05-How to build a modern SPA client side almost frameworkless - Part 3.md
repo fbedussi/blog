@@ -259,4 +259,6 @@ ${notes.value
 
 Now we have a fully functional client side navigation using only the web platform!
 
+As usual, you can find all the code of this part in [this repo](https://github.com/fbedussi/frameworkless-spa-tutorial/tree/part3).
+
 In the next post we will implement the last missing feature: note editing, see you soon. 
