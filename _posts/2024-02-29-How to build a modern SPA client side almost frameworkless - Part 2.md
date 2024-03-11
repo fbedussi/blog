@@ -270,9 +270,9 @@ Finally we can filter the list based on the `searchTerm` signal value:
 
 ```javascript
   ${notes.value
-            .filter(note => (note.title + note.text).toLocaleLowerCase().includes(searchTerm.value))
-            .map(note => html`
-            <article>
+    .filter(note => (note.title + note.text).toLocaleLowerCase().includes(searchTerm.value))
+    .map(note => html`
+    <article>
 ```
 
 Our search box looks like this:
