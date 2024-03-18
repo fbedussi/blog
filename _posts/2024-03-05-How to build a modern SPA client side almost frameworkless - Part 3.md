@@ -261,4 +261,4 @@ Now we have a fully functional client side navigation using only the web platfor
 
 As usual, you can find all the code of this part in [this repo](https://github.com/fbedussi/frameworkless-spa-tutorial/tree/part3).
 
-In the next post we will implement the last missing feature: note editing, see you soon. 
+In the [next post](https://fbedussi.github.io/blog/recipes/How-to-build-a-modern-SPA-client-side-almost-frameworkless-Part-4) we will implement the last missing feature: note editing, see you soon. 

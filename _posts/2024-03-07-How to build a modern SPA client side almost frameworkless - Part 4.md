@@ -94,4 +94,4 @@ And this is the result:
 
 With this feature in place the application is basically completed. As usual, you can find all the code of this part in [this repo](https://github.com/fbedussi/frameworkless-spa-tutorial/tree/part4).
 
-But we can do one more thing: add a build step. It is nice that we don't need it, but it is also nice to be able to add it, if we want. So, stay tuned for the last part of this series. 
+But we can do one more thing: add a build step. It is nice that we don't need it, but it is also nice to be able to add it, if we want. So, stay tuned for [the last part of this series](https://fbedussi.github.io/blog/recipes/How-to-build-a-modern-SPA-client-side-almost-frameworkless-Part-5). 
