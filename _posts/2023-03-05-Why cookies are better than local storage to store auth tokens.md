@@ -10,7 +10,7 @@ For years I've been keeping my auth and session tokens in the local storage. Thi
 
 1- You need to explicitly manage the writing and reading of the token from the local storage
 2- Once you store the token in the local storage, the obvious choice to send it back to the server is inside an auth header, eg: "Authorization: bearer <token>". Unfortunately you can add an header only to HTTP calls made with JavaScript, not calls made by the browser itself to static resource. So, for instance, if you need to protect your images with a token, you cannot just drop an `img` tag in the page with an `src` attribute. The browser would not sent any token. You are forced to use an horrible workaround, like putting the token in the image URL's query string.
-3- Local storage can be accessed by JavaScript, that exposes the token to possible [XSS attacks](https://owasp.org/www-community/attacks/xss/)
+3- Local storage can be accessed by JavaScript, that exposes the token to possible [CSRF attacks](https://owasp.org/www-community/attacks/csrf)
 4- Local storage does not expires. Either you choose session storage, and the information is wiped out at every session, or choose local storage and the information sits there forever, until is not explicitly removed by the user. Ok, the token duration should be handled by the token emitter, but having more control on token expiration on the cline side is not bad.
 
 All this problems can be, not only solved, but entirely avoided just by keeping the token in a cookie.
