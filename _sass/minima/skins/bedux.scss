@@ -8,7 +8,7 @@ $lm-brand-color-dark: #ff0000;
 @import './bedux/_syntax-highlighting';
 
 body {
-  color: initial;
+  color: black !important;
 }
 
 .site-nav .trigger {
