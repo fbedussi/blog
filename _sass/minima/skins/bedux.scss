@@ -11,6 +11,11 @@ body {
   color: initial;
 }
 
+.site-nav .trigger {
+  display: flex;
+  gap: 1rem;
+}
+
 .site-title,
 .site-title {
   display: flex;
