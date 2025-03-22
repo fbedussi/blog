@@ -7,6 +7,10 @@ $lm-brand-color-dark: #ff0000;
 @import 'minima/skins/auto';
 @import './bedux/_syntax-highlighting';
 
+body {
+  color: initial;
+}
+
 .site-title,
 .site-title {
   display: flex;
