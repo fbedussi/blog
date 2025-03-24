@@ -2,14 +2,13 @@
 
 $color-scheme-auto: false;
 $color-scheme-dark: false;
-// $lm-brand-color-dark: #ff0000;
 
 @import 'minima/skins/auto';
 @import './bedux/_syntax-highlighting';
 
-// body {
-//   color: black !important;
-// }
+.site-header {
+  border-top: 5px solid #ff0000 !important;
+}
 
 .site-nav .trigger {
   display: flex;
@@ -23,6 +22,10 @@ $color-scheme-dark: false;
   color: black !important;
   gap: 0.5em;
   white-space: nowrap;
+}
+
+.post-header {
+  text-align: left !important;
 }
 
 .post-meta {
@@ -53,4 +56,9 @@ button {
 .copy-code-button {
   padding: 8px;
   font-size: 75%;
+}
+
+.social-links .social-media-list li a {
+  display: flex;
+  align-items: center;
 }

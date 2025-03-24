@@ -4,10 +4,7 @@ plugins:
 remote_theme: jekyll/minima
 minima:
   skin: bedux
-  social_links:
-    - { platform: github,  user_url: "https://github.com/fbedussi" }
-    - { platform: mastodon, user_url: "https://mastodon.uno/@saiot", title: "mastodon" }
-
+  
 title: No stress front end
 description: A journey to a healthier front end development
 url: https://fbedussi.github.io/blog/
