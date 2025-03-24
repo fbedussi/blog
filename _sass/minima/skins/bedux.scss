@@ -2,14 +2,14 @@
 
 $color-scheme-auto: false;
 $color-scheme-dark: false;
-$lm-brand-color-dark: #ff0000;
+// $lm-brand-color-dark: #ff0000;
 
 @import 'minima/skins/auto';
 @import './bedux/_syntax-highlighting';
 
-body {
-  color: black !important;
-}
+// body {
+//   color: black !important;
+// }
 
 .site-nav .trigger {
   display: flex;
