@@ -1,6 +1,6 @@
 ---
 title: 'The joy of classless CSS frameworks'
-date: 2025-02-22
+date: 2025-03-22
 categories: Opinions
 layout: post
 excerpt_separator: <!--more-->
