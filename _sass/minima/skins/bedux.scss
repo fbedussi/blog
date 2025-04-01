@@ -6,13 +6,39 @@ $color-scheme-dark: false;
 @import 'minima/skins/auto';
 @import './bedux/_syntax-highlighting';
 
-.site-header {
+.site-header.my-header {
   border-top: 5px solid #ff0000 !important;
+  position: sticky;
+  top: 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+
+    &::after {
+      content: none;
+    }
+
+    .site-title {
+      padding-right: 1rem;
+    }
+  }
+
+  .site-nav {
+    position: static;
+    border: none;
+
+    .trigger {
+      display: flex;
+      gap: 1rem;
+    }
+  }
 }
 
-.site-nav .trigger {
-  display: flex;
-  gap: 1rem;
+main.page-content {
+  padding-top: 1rem;
 }
 
 .site-title,
