@@ -28,4 +28,4 @@ It turns out my mental model of how shadow DOM works was flawed. The style encap
 - white-space
 - word-spacing
 
-This explains why text within my shadow DOM was picking up global styles. Unfortunately, this discovery—combined with the fact that `@font-face` rules don't work inside shadow DOM (which I'll cover in a future post)—triggered a redesign of my approach. I ultimately had to abandon shadow DOM for this project and return it to my toolbox once again. One damned shadow DOM! One day you'll be mine!
+This explains why text within my shadow DOM was picking up global styles. Unfortunately, this discovery—combined with the fact that [`@font-face` rules don't work inside shadow DOM](https://fbedussi.github.io/blog/til/The-font-face-rule-does-not-work-in-the-shadow-DOM)—triggered a redesign of my approach. I ultimately had to abandon shadow DOM for this project and return it to my toolbox once again. One damned shadow DOM! One day you'll be mine!
