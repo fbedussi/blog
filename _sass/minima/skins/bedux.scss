@@ -11,6 +11,10 @@ $color-scheme-dark: false;
   position: sticky;
   top: 0;
 
+  @media (max-width: 500px) {
+    position: static;
+  }
+
   .wrapper {
     display: flex;
     justify-content: space-between;
