@@ -7,9 +7,10 @@ excerpt_separator: <!--more-->
 ---
 
 As with other things in life, professional growth often follows 3 steps:
-    - blind acceptance: when you start learning something you treat what is being taught to you as the word of God. That is the way to do things.
-    - denial: after a while you start to realize that real life scenarios are very different from the ones in textbooks (or in blog posts), so they require something different from the rules you learned.
-    - compromise: when your expertise increases even more you understand that yes, reality is different from theory, but the theory can still be applied, even if with a grain of salt and not in a mechanical way
+
+- blind acceptance: when you start learning something you treat what is being taught to you as the word of God. That is the way to do things.
+- denial: after a while you start to realize that real life scenarios are very different from the ones in textbooks (or in blog posts), so they require something different from the rules you learned.
+- compromise: when your expertise increases even more you understand that yes, reality is different from theory, but the theory can still be applied, even if with a grain of salt and not in a mechanical way
 
 I followed this path even about comments in code. 
 
