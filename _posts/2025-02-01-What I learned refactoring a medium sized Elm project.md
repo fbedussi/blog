@@ -6,7 +6,7 @@ layout: post
 excerpt_separator: <!--more-->
 ---
 
-Recently I've been busy in refactoring a medium sized Elm project. The refactor was needed because the code base had grown during the years and had became very contrived and difficult to understand. That is way it was difficult to change and evolve.
+Recently I've been busy refactoring a medium sized Elm project. The refactor was needed because the code base had grown over the years and had become very contrived and difficult to understand. That is why it was difficult to change and evolve.
 
 During this activity I learned some lessons that I'd like to share. Probably not everyone will agree on every point, but let me know in the comments if you have different opinions.
 
@@ -16,7 +16,7 @@ During this activity I learned some lessons that I'd like to share. Probably not
 
 I've been able to complete this big refactor only because the project had a quite comprehensive suite of functional tests, written in Cypress, and so totally independent from the implementation.
 
-Unfortunately the compiler alone is not enough. No matter what someone says, "if it compiles, it works" is just not true. To successfully refactor a non trivial code base you need both: a good compiler and a good set of tests that do not depend on the implementation, so they will not break when the implementation changes. In the front end world this means tests that run in the browser against the actual page/app. Cypress, Playwright or another tool, it doesn't metter, as long as they check that the final result is not broken. 
+Unfortunately the compiler alone is not enough. No matter what someone says, "if it compiles, it works" is just not true. To successfully refactor a non trivial code base you need both: a good compiler and a good set of tests that do not depend on the implementation, so they will not break when the implementation changes. In the front end world this means tests that run in the browser against the actual page/app. Cypress, Playwright or another tool, it doesn't matter, as long as they check that the final result is not broken. 
 
 ## 2. Proceed in tiny steps
 
@@ -90,7 +90,7 @@ updateAgentToolsInputAmount agentTools inputAmount =
     { agentTools | inputAmount = inputAmount }
 ```
 
-Useless code is not only useless, but it is actually harmful, because it adds an extra level of indirection, making the code mode opaque, and difficult to understand. 
+Useless code is not only useless, but it is actually harmful, because it adds an extra level of indirection, making the code more opaque, and difficult to understand. 
 
 ## 5. Avoid module aliases as much as possible
 
@@ -104,7 +104,7 @@ If you keep the module in the root its name will be just `PriceRecap`, so no nee
 
 Speaking about opacity, I see that a lot of devs love using opaque types everywhere. I think this is an anti pattern. Opaque types should be used sparingly because they add, well, opacity. There are definitely some use cases for them, but other than that they should be avoided. 
 
-Opaque type are basically useful in 2 cases. The first one is when we want to avoid consumer code to access the implementation detail behind a type. But this is really useful when we are writing a library that can be used by many external consumers. In that case it makes sense that we declare a clear and rigid interface that hide the internal implementation. Because we don't want to force the consumers to change whenever we change our implementation. But this is not the case if we are just writing a module that is part of a unique code base. In that case it is not a problem to refactor the rest of the code if and when we will change the implementation of the module. It can even be done automatically by the IDE, for instance if we change a name. In this case opaque types do more harm than good, because they forces you to write a lot of boilerplate, that can include bugs, and that adds another unnecessary level of indirection to the system making it more difficult to understand. 
+Opaque types are basically useful in 2 cases. The first one is when we want to avoid consumer code to access the implementation detail behind a type. But this is really useful when we are writing a library that can be used by many external consumers. In that case it makes sense that we declare a clear and rigid interface that hides the internal implementation. Because we don't want to force the consumers to change whenever we change our implementation. But this is not the case if we are just writing a module that is part of a unique code base. In that case it is not a problem to refactor the rest of the code if and when we will change the implementation of the module. It can even be done automatically by the IDE, for instance if we change a name. In this case opaque types do more harm than good, because they force you to write a lot of boilerplate, that can include bugs, and that adds another unnecessary level of indirection to the system making it more difficult to understand. 
 
 The second use case for opaque types is when you want to enforce particular logic in getting/setting the data, but if you don't need to, just go with a regular type that can be used without fuss. 
 
@@ -197,7 +197,7 @@ applyDiscount price =
         |> (<) 100
 ```
 
-it's not clear at a first glance if the intention was to check if price < 100 or the other way around (that is what the code is actually doing). So it's better to stick with the normal from:
+it's not clear at a first glance if the intention was to check if price < 100 or the other way around (that is what the code is actually doing). So it's better to stick with the normal form:
 
 ```elm
 applyDiscount : Int -> Bool
@@ -219,7 +219,7 @@ this:
 ```elm
 joinMessageParticlesContent : List (MessageParticle Msg) -> List (Html Msg)
 joinMessageParticlesContent messageParticles =
-    messageParticles |> List.concatMap (\messageParticle -> [ Html.br [] [] ] |> List.append messageParticle.content )
+    messageParticles |> List.concatMap (\messageParticle -> messageParticle.content ++ [ br [] [] ] )
 ```
 
 It is not a case that the `flip` function has been removed from the language core.  
@@ -228,6 +228,10 @@ It is not a case that the `flip` function has been removed from the language cor
 
 If a code base is simple, it is easy for every dev to understand it and to change it. Simple code can remain simple iteration after iteration, because if a dev truly understands the code they can refactor their work with confidence, and to get to a simple solution do you need some cycles of refactoring from the initial implementation. 
 
-If a code base is complex, it can only became more complex as times goes by, because once a poor dev has found a working implementation of the feature they are working on, they will not dare to refactor it to make it better, for the fear of breaking everything.
+If a code base is complex, it can only become more complex as time goes by, because once a poor dev has found a working implementation of the feature they are working on, they will not dare to refactor it to make it better, for the fear of breaking everything.
 
 The biggest enemies of simplicity are premature optimization and premature abstractions. Stick with the easiest solution as long as you don't actually need something more complex. Let's repeat the same code some times before trying to abstract it into a common implementation.
+
+## 10. Don't overcomplicate things just because someone says that "this is the right way"
+
+For instance, you don't need to add a tenth point to a list just because copywriting rules say that a decalogue is a compelling format!
