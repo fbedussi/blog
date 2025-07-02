@@ -232,6 +232,6 @@ If a code base is complex, it can only become more complex as time goes by, beca
 
 The biggest enemies of simplicity are premature optimization and premature abstractions. Stick with the easiest solution as long as you don't actually need something more complex. Let's repeat the same code some times before trying to abstract it into a common implementation.
 
-## 10. Don't overcomplicate things just because someone says that "this is the right way"
+## 10. Don't overcomplicate things just because someone says that "this is the right way"
 
 For instance, you don't need to add a tenth point to a list just because copywriting rules say that a decalogue is a compelling format!
